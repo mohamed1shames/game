@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+    background-image: -webkit-linear-gradient(rgb(25, 194, 115), rgb(94, 173, 69),rgb(59,153,134));
+    min-height: 812px;
+}
+
+#game{
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    background: url(images.jpg);
+    background-size: cover;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+
+#block{
+    width: 50px;
+    height: 500px;
+    background-color: blueviolet;
+    position: relative;
+    left: 400px;
+    animation: block 2s linear infinite;
+}
+
+
+@keyframes block {
+    0%{
+        left: 400px;
+    }
+    100%{
+        left: -50px;
+    }
+}
+
+
+#hole{
+    height: 150px;
+    width: 50px;
+    background-color: blue;
+    position: relative;
+    left: 400px;
+    top: -500px;
+    animation:block 2s linear infinite ;
+}
+
+#bird{
+    position: fixed;
+    top: 50px;
+    height: 50px;
+    width: 50px;
+}
+
+#bird img{
+    height: 60px;
+    width: 60px;
+}
+
+#result{
+    height: 200px;
+    width: 400px;
+    background-color: brown;
+    margin: 5rem auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: none;
+    text-align: center;
+}
+
+#btn{
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    background-color: blue;
+    font-size: 20px;
+    color: white;
+    border: 2px solid black;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#text{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: seashell;
+}
+#result h1{
+    font-size: 3rem;
+}
+
+
